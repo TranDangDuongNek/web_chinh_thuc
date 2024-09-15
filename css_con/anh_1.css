@@ -1,0 +1,19 @@
+.gioi_thieu {
+    li {
+        padding: 10px 100px;
+        display: block;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+        font-size: 40px;
+        color:rgb(19, 2, 2);
+    }
+}
+.gioi_thieu img {
+    width: 100px; /* Chiều rộng của hình ảnh */
+    height: 100px; /* Chiều cao của hình ảnh */
+    border-radius: 50%; /* Tạo hình tròn */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border: 2px solid #000205;
+    color: aliceblue;
+  
+  }
