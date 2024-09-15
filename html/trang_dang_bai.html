@@ -14,5 +14,37 @@
         <li><a href="../html/trang_coi_bai.html">COI BÀI ĐĂNG</a></li>
         <li><a href="../html/trang_check_bai.html">BÀI ĐĂNG CỦA BẠN</a></li>
         </ul>
+    <ul class="phu_de">
+    <h1>
+        ĐĂNG CÁC HÌNH ẢNH QUẢNG CÁO CỦA BẠN
+    </h1>
+        </ul>
+        <div class="container">
+            <button id="nut_dang_bai">Đăng hình</button>
+            <input type="file" id="file_input" accept="image/*" style="display: none;">
+        </div>
+        
+        <div class="dang_bai">
+
+        </div>
+        
+        <script>
+            document.getElementById('nut_dang_bai').onclick = function() {
+                document.getElementById('file_input').click();
+            }
+        
+            document.getElementById('file_input').onchange = function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        document.querySelector('.dang_bai').appendChild(img);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            }
+        </script>
 </body>
 </html>
