@@ -1,3 +1,12 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+
+  background-image: url(https://i.pinimg.com/originals/be/83/99/be8399dea45fe029701391e017e0c72f.gif);
+  background-size: cover; /* Tự động điều chỉnh kích thước hình nền */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-position: center top ; /* Căn giữa hình nền */
+}
 .nut_an {
     position: center;
     list-style: none;
@@ -26,3 +35,38 @@
     border-bottom: 2px solid rgb(26, 152, 168);
     color:rgb(0, 255, 0);
   }
+  .phu_de {
+    font-size: 20px;          
+    color: #333;              
+    text-align: center;
+    background: rgba(13, 135, 156, 0.5); /* Màu xanh với độ mờ 50% */
+    color: rgb(12, 1, 1); 
+    padding: 20px; 
+
+}
+.container {
+  text-align: center;
+}
+
+#nut_dang_bai {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.dang_bai {
+
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; /* Canh giữa các hình ảnh */
+}
+
+.dang_bai img {
+  width: calc(20% - 30px); /* Mỗi hình ảnh chiếm 25% chiều rộng trừ đi khoảng cách */
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #000205;
+  color: aliceblue;
+
+}
