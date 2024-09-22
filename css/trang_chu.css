@@ -6,6 +6,7 @@ body {
   background-size: cover; /* Tự động điều chỉnh kích thước hình nền */
   background-repeat: no-repeat; /* Không lặp lại hình nền */
   background-position: center top ; /* Căn giữa hình nền */
+  
 }
 .nut_an {
     position: center;
@@ -94,4 +95,32 @@ body {
       font-size: 20px;
       color:white;
   }
+}
+.brand-logos {
+  display: flex;
+  flex-direction: column; /* Đặt chiều dọc cho các phần tử */
+  align-items: center ; /* Căn giữa các phần tử theo chiều ngang */
+}
+
+.sec-heading {
+
+  color: white;
+  font-size: 50px; /* Kích thước chữ */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  text-align: center; /* Căn giữa văn bản */
+}
+
+.brand-logos div {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử xuống dòng */
+  justify-content: center; /* Căn giữa các phần tử */
+}
+
+.brand-logos div a {
+  padding: 5px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.brand-logos img {
+  width: 130px; /* Đặt chiều rộng hình ảnh */
+  height: auto; /* Giữ tỷ lệ khung hình */
 }
