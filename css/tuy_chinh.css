@@ -3,18 +3,6 @@
 --primary: #0533ff;
 --secondary: #3363ff;
 --accent: #3e37be; */
-
-
-
-  nav {
-    background-color: blue;
-    width: 200%;
-    height: 120px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 body {
   padding: 0;
   margin: 0 auto;
@@ -23,6 +11,35 @@ body {
   background-size: cover; /* Tự động điều chỉnh kích thước hình nền */
   background-repeat: no-repeat; /* Không lặp lại hình nền */
   background-position: center top ; /* Căn giữa hình nền */
+}
+
+
+  nav {
+
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .ben-phai #nut-dang-nhap {
+  color: rgb(42, 65, 165);
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+
+
+}
+nav .ben-phai #nut-dang-nhap:hover{
+  border-bottom: 2px solid rgb(26, 152, 168);
+  color:rgb(0, 255, 0);
+
 }
 .gioi_thieu {
   font-size: 20px;          
@@ -56,7 +73,7 @@ body {
     }
   }
 }
-.nut_an li:hover{
+.nut_an li a:hover{
   border-bottom: 2px solid rgb(26, 152, 168);
   color:rgb(0, 255, 0);
 }
