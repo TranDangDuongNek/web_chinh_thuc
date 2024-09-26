@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TẠO TÀI KHOẢN</title>
     <link rel="stylesheet" href="./css/chinh_sua_DK_DN.css">
- 
-</head>
-<body>    
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); // Ngăn chặn form submit mặc định
 
+            var username = document.getElementById('login_ten_nguoi_dung').value;
+            var password = document.getElementById('login_password').value;
+
+            if (username === 'anhti1987' && password === '1987') {
+                window.location.href = './index.html'; // Chuyển hướng đến trang index.html
+            } else {
+                var errorElement = document.getElementById('error_message');
+                errorElement.textContent = 'Tên người dùng hoặc mật khẩu không đúng!';
+                errorElement.style.color = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
     <div class="dang_nhap">
         <h1>Đăng Nhập</h1>
-        <form action="login" method="POST">
+        <form onsubmit="validateLogin(event)">
             <label for="login_ten_nguoi_dung">TÊN NGƯỜI DÙNG:</label>
             <input type="text" id="login_ten_nguoi_dung" name="ten_nguoi_dung" required><br>
-
             <label for="login_password">MẬT KHẨU:</label>
             <input type="password" id="login_password" name="password" required><br>
-
             <input type="submit" value="Đăng Nhập">
         </form>
-        <p>Bạn chx có tài khoản à? <a href="dang_ki.html">Đăng Kí</a></p>
+        <p id="error_message"></p>
+        <p>Bạn chưa có tài khoản à? <a href="dang_ki.html">Đăng Kí</a></p>
     </div>
-    
-
 </body>
 </html>

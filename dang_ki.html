@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TẠO TÀI KHOẢN</title>
     <link rel="stylesheet" href="./css/chinh_sua_DK_DN.css">
+    <script>
+        function validateRegistration(event) {
+            event.preventDefault(); // Ngăn chặn form submit mặc định
+
+            var username = document.getElementById('ten_nguoi_dung').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('xac_nhan_password').value;
+
+            var errorElement = document.getElementById('error_message');
+            errorElement.textContent = ''; // Xóa thông báo lỗi trước đó
+
+            if (password !== confirmPassword) {
+                errorElement.textContent = 'Mật khẩu xác nhận không khớp!';
+                errorElement.style.color = 'red';
+                return;
+            }
+
+            if (username && email && password && confirmPassword) {
+                window.location.href = './index.html'; // Chuyển hướng đến trang index.html
+            } else {
+                errorElement.textContent = 'Vui lòng điền đầy đủ thông tin!';
+                errorElement.style.color = 'red';
+            }
+        }
+    </script>
 </head>
 <body>    
     <div class="dang_ki">
         <h1>Đăng Ký</h1>
 
-        <form action="index.html" method="POST">
+        <form onsubmit="validateRegistration(event)">
             <label for="ten_nguoi_dung">TÊN NGƯỜI DÙNG:</label>
             <input type="text" id="ten_nguoi_dung" name="ten_nguoi_dung" required><br>
 
@@ -23,11 +49,12 @@
             <label for="xac_nhan_password">XÁC NHẬN MẬT KHẨU:</label>
             <input type="password" id="xac_nhan_password" name="xac_nhan_password" required><br>
 
-            <input type="submit" value="Đăng Ký ">
+            <input type="submit" value="Đăng Ký">
         </form>
+
+        <p id="error_message"></p>
 
         <p>Đã có tài khoản? <a href="login.html">Đăng Nhập</a></p>
     </div>
-
 </body>
 </html>

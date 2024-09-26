@@ -39,8 +39,8 @@ body {
     font-size: 20px;          
     color: #333;              
     text-align: center;
-    background: rgba(13, 135, 156, 0.5); /* Màu xanh với độ mờ 50% */
-    color: rgb(12, 1, 1); 
+    background: rgba(13, 156, 20, 0.5); /* Màu xanh với độ mờ 50% */
+    color: rgb(19, 102, 11); 
     padding: 20px; 
 
 }
