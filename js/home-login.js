@@ -10,7 +10,7 @@ function checkCurrentUser(nut_dang_nhap) {
             // Xóa current user trên local storage
             localStorage.removeItem("currentUser");
             // Chuyển lại trang index
-            location.href = "../index.html"; // Chuyển hướng đến trang index
+            location.href = "./index.html"; // Chuyển hướng đến trang index
         };
         
         // Đổi text cho nút đăng nhập
@@ -19,7 +19,7 @@ function checkCurrentUser(nut_dang_nhap) {
         // Người dùng chưa đăng nhập
         // Bắt sự kiện cho nút đăng nhập -> trang đăng nhập
         nut_dang_nhap.onclick = function () {
-            location.href = "../html/login.html"; // Chuyển đến trang đăng nhập
+            location.href = "./html/login.html"; // Chuyển đến trang đăng nhập
         };
         
         // Đổi text cho nút đăng nhập

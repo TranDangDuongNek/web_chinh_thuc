@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/originals/f0/cc/98/f0cc98bda7c2ed900b52f2ad4ae719d1.gif');
+    background-image: url('https://wallpapercave.com/wp/wp11530907.jpg');
     background-size: cover; /* Để hình nền phủ đầy */
     background-repeat: no-repeat; /* Không lặp lại hình nền */
     background-color: #f4f4f4; 
@@ -21,6 +21,7 @@ body {
 }
 
 .dang_ki {
+
     background: rgba(255, 255, 255, 0.486);
     padding: 40px;
     border-radius: 10px;
