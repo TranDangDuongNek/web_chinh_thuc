@@ -6,10 +6,8 @@
 body {
   padding: 0;
   margin: 0 auto;
-  background-image: url('https://wallpapercave.com/wp/wp11530907.jpg');
-  background-size: cover; /* Để hình nền phủ đầy */
-  background-repeat: no-repeat; /* Không lặp lại hình nền */
-  background-color: #e6f0ff;
+
+  background-color: #98baee;
 
   background-size: cover; /* Tự động điều chỉnh kích thước hình nền */
   background-repeat: no-repeat; /* Không lặp lại hình nền */
